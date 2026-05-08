@@ -155,8 +155,8 @@ Do not commit `.env` files or API keys. The root `.gitignore` is configured to e
 
 Maintained by:
 
-- Name: CodewithShiva-286
-- GitHub: [CodewithShiva-286](https://github.com/CodewithShiva-286)
+- Name: anupcode18
+- GitHub: https://github.com/anupcode18
 
 ## Contributing
 
@@ -174,7 +174,7 @@ Please avoid committing secrets, generated uploads, local logs, or dependency fo
 
 This project is open source under the ISC License.
 
-Copyright (c) 2026 CodewithShiva-286
+Copyright (c) 2026 (https://github.com/anupcode18)
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the copyright notice and this permission notice appear in all copies.
 
