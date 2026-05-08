@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - EASEIT</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body class="signup-page">
+  <main class="signup-shell">
+    <section class="signup-card" aria-labelledby="signupTitle">
+      <div class="signup-nav">
+        <a href="/html/index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span>Home</span>
+        </a>
+        <a href="/html/index.html" class="brand-lockup" aria-label="EASEIT home">
+          <span class="brand-mark"><i class="fas fa-leaf"></i></span>
+          <span>EASEIT</span>
+        </a>
+      </div>
+
+      <div class="signup-header">
+        <p class="eyebrow">Create your profile</p>
+        <h1 id="signupTitle">Build a safer food scanner around your health needs.</h1>
+        <p>Save your profile once, then let EASEIT flag ingredients that matter to you.</p>
+      </div>
+
+      <div id="authMessage" class="auth-message hidden" role="status" aria-live="polite"></div>
+
+      <form id="signupForm" class="signup-form">
+        <div class="form-field">
+          <label for="username">Username</label>
+          <div class="input-shell">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" name="username" placeholder="Choose a username" autocomplete="username" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <div class="input-shell">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <div class="input-shell">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" minlength="6" required>
+            <button type="button" id="password-toggle-btn" class="password-toggle" aria-label="Show password" aria-pressed="false">
+              <i class="fas fa-eye" id="password-toggle-icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <label class="terms-option" for="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          <span>I agree to the <a href="/html/terms.html">Terms and Conditions</a></span>
+        </label>
+
+        <button type="submit" class="signup-submit">
+          <span>Create account</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <p class="auth-switch">
+        Already have an account?
+        <a href="/html/signin.html">Sign in</a>
+      </p>
+    </section>
+
+    <aside class="signup-visual" aria-label="EASEIT onboarding preview">
+      <div class="visual-panel">
+        <div class="profile-preview">
+          <div class="preview-header">
+            <span class="preview-dot"></span>
+            <span>Health profile setup</span>
+          </div>
+          <div class="profile-chips">
+            <span>Peanuts</span>
+            <span>Lactose</span>
+            <span>Gluten</span>
+            <span>Diabetes</span>
+          </div>
+          <div class="scan-card">
+            <div class="scan-line"></div>
+            <p>Personalized ingredient matching activates after signup.</p>
+          </div>
+        </div>
+        <div class="benefit-grid">
+          <div>
+            <i class="fas fa-camera"></i>
+            <span>Scan labels</span>
+          </div>
+          <div>
+            <i class="fas fa-shield-heart"></i>
+            <span>Match risks</span>
+          </div>
+          <div>
+            <i class="fas fa-comments"></i>
+            <span>Ask AI</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="../js/signup.js"></script>
+</body>
+</html>
